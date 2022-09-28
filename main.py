@@ -1,5 +1,6 @@
 import machine
 from time import sleep
+from config import *
 
 text = input(": ")
 morse = ""
