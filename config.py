@@ -1,11 +1,11 @@
 import machine
 led=machine.Pin(25, machine.Pin.OUT)
 
-short=0.1
-long=short*4
-space=0.75
-symbol_wait=0.25
-letter_wait=symbol_wait*2
+short=0.1 # Wait time on -
+long=short*4 # Wait time on +
+space=0.75 # Wait time on space
+signal_wait=0.25 # Wait time between signals
+char_wait=signal_wait*2 # Wait time between characters
 
 dict = {'A': '-+', 'B': '+---',
         'C': '+-+-', 'D': '+--', 'E': '-',
@@ -23,4 +23,4 @@ dict = {'A': '-+', 'B': '+---',
         '/': '+--+-', '(': '+-++-', ')': '+-++-+'
 }
 
-rev_dict = {v: k for k, v in dict.items()}
+rev_dict = {v: k for k, v in dict.items()} # Key, value -> value, key
