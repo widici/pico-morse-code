@@ -12,7 +12,7 @@ for char in text:
     sleep(letter_wait)
     if char != ' ':
         print(f"\n{rev_dict[char]}")
-    # Interpreter, for signal (+ -) in char -> prints char -> if signal equals - or + -> turns on led and sleeps | sleeps -> turns of led
+    # Interpreter, for signal (+ -) in char -> prints char -> if signal equals - or + -> turns on led and sleeps | sleeps -> turns off led
     for signal in char:
         print(signal)
         if signal == "-":
