@@ -20,7 +20,6 @@ while True:
     else:
         print(f"\nInvalid input '{cmd}'\n")
    
-   
 morse = ""
 
 # Encoder, for key in dict -> replaces char with dict value -> if char isn't equal to space -> prints char
